@@ -1,0 +1,28 @@
+Radio Buttons :thede Buttons are used to select a singular choice. eg: gender selection
+<input type="radio" name="gender" value= "male" id="m"/>
+<label for="m">Male</label>
+hidden -it is used to hide an input such that server can get data along with user submitted data without user's knowladge.
+Text area :it is used text area to enter larg amount data used for feedback messages address etc...,
+text area size can be cheged using rows and column values...
+
+Date :13-08-2025 Wed :
+Form Validation :
+It is possible to validate inputes in html  without js ?
+YES..It is possible using some attributes such as required,
+mix,min,pattern etc
+1) required: it is used to make to input mandetary before the submitting the form.
+2)min :it is used to provide maximum value to unumber input 
+3)minlenth :it is used to provide minimum length in html
+4)maxlength :it is used to make an input disabled and it well not be submitted
+5)readonly :it is used to make the input only readable and it will be submitted with the form.
+
+Regular Expressions : Regular Expressions or regex are used to validate patterns such as inputs ,data etc....
+they much patterns like a string it uses lot of symbols with each symbols differnt purpose
+1. [] -- it is used to represent a group 
+2..{}-- it is used to specify the range
+    {a}--exacatly a charcters
+    {a,b}-- minimum a and maximum b charcters
+3. \d -- digits,  \w -- words,
+4. .--wildcard(it can be any charcters)
+5. * -- 0 or more of previous 
+6. + -- 1 or more of previous

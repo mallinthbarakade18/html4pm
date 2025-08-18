@@ -1,0 +1,18 @@
+1.Download and install git from internet
+2.After installing go to cmd anfd type git -v.if properlly insatlled ,version will come
+3.open v s code,open code floder open terminal --> new terminal in vs code
+4.git installing
+5.git add
+6.git commit -m "Message"
+7.for the the first time you need to verify who are you
+    git config --global user.name "username"
+    git config --global user.email "your email"
+
+
+    We need one website to store ,shere deploy our code called "github"
+    8. goto "github.cob" account (https://github.com)
+
+    9.the git remote add otigin link -->https://github.com/mallinthbarakade18/html4pm.git
+    10.git push -u origin main/master
+
+    On every change reapet 5,6, and 10

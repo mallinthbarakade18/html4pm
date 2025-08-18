@@ -1,0 +1,150 @@
+<!-- Date: 2025-08-14 -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <h1>1.Software Training Institute Registration Form</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <br><br>
+            <label for="course">Highest Education Qualification:</label>
+            <select id="course" name="course" required>
+                <option value="" disabled selected>Select Education Qualification</option>
+                <option value="web-development">10th Grade</option>
+                <option value="data-science">12th Grade</option>
+                <option value="cyber-security">Undergraduate</option>
+                <option value="mobile-app-development">Postgraduate</option>
+            </select>
+            <br><br>
+            <p>Employment status :</p>
+            <input type="radio" id="employed" name="employment" value="employed" required>
+            <label for="employed">Employed</label>
+            <br>
+            <input type="radio" id="unemployed" name="employment" value="unemployed" required>
+            <label for="unemployed">Unemployed</label>
+            <br>
+            <input type="radio" id="student" name="employment" value="student" required>
+            <label for="student">Student</label>
+            <br>
+            <input type="radio" id="self-employed" name="employment" value="self-employed" required>
+            <label for="self-employed">Self-Employed</label>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Course Selection</legend>
+            <label for="category">Course Category</label>
+            <select id="category" name="category" required>
+                <option value="" disabled selected>Select Category</option>
+                <option value="web-development">Web Development</option>
+                <option value="data-science">Data Science</option>
+                <option value="cyber-security">Cyber Security</option>
+                <option value="mobile-app-development">Mobile App Development</option>
+            </select><br><br>
+            <label>Specific Course:</label>
+            <select id="specific-course" name="specific-course" required>
+                <option value="" disabled selected>First Select Category</option>
+                <option value="full-stack">Full Stack Development</option>
+                <option value="data-analytics">Data Analytics</option>
+                <option value="network-security">Network Security</option>
+                <option value="android-development">Android Development</option>
+            </select><br><br>
+            <label>Course Level :</label><br>
+            <select id="course-level" name="course-level" required>
+                <option value="" disabled selected>Select Course Level</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select><br><br>
+            <label>Preferred Batch Time :</label><br>
+            <select id="batch-time" name="batch-time" required>
+                <option value="" disabled selected>Select Batch Time</option>
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="evening">Evening</option>
+            </select>
+        </fieldset>
+    </form>
+    <form> 
+        <fieldset>
+            <legend>Technical Background :</legend>
+            <p>Programming Languages Known(Selct all the apply):</p><br>
+            <input type="checkbox" id="java" name="languages" value="java">
+            <label for="java">Java</label><br>
+            <input type="checkbox" id="python" name="languages" value="python">
+            <label for="python">Python</label><br>
+            <input type="checkbox" id="javascript" name="languages" value="javascript">
+            <label for="javascript">JavaScript</label><br>
+            <input type="checkbox" id="c#" name="languages" value="csharp">
+            <label for="csharp">C#</label><br>
+            <input type="checkbox" id="c++" name="languages" value="cplusplus">
+            <label for="cplusplus">C++</label><br>
+            <input type="checkbox" id="php" name="languages" value="php">
+            <label for="php">PHP</label><br>
+            <input type="checkbox" id="ruby" name="languages" value="ruby">
+            <label for="ruby">Ruby</label><br>
+            <input type="checkbox" id="other" name="languages" value="other">
+            <label for="other">Other</label><br>
+            <p>Your Programming Experience:</p>
+            <textarea name="Technical Experience" placeholder="put your Technical Experience here......" rows="4" cols="50"></textarea>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Payment Details</legend>
+            <p>Payment Method:</p>
+            <input type="radio" id="credit-card" name="payment-method" value="credit-card" required>
+            <label for="credit-card">Credit Card</label><br>
+            <input type="radio" id="debit-card" name="payment-method" value="debit-card" required>
+            <label for="debit-card">Debit Card</label><br>
+            <input type="radio" id="paypal" name="payment-method" value="paypal" required>
+            <label for="paypal">PayPal</label><br>
+            <input type="radio" id="bank-transfer" name="payment-method" value="bank-transfer" required>
+            <label for="bank-transfer">Bank Transfer</label><br><br>
+            <p>Payment Plan:</p>
+            <select id="payment-plan" name="payment-plan" required>
+                <option value="" disabled selected>Select Payment Plan</option>
+                <option value="one-time">One-Time Payment</option>
+                <option value="installments">Installments</option>
+            </select><br><br>
+            <input type="checkbox" id="discount" name="discount" required>
+            <label for="discount">Apply for early bird discount(if available)</label>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Additional Information</legend>
+            <label>How did you hear about us?</label><br>
+            <select>
+                <option value="" disabled selected>Select an option</option>
+                <option value="search-engine">Search Engine</option>
+                <option value="social-media">Social Media</option>
+                <option value="friend">Friend/Colleague</option>
+                <option value="advertisement">Advertisement</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            <label>Why are you learning us?</label><br> 
+            <textarea name="learning-reason" placeholder="Enter your reason here..." rows="4" cols="50"></textarea><br>
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Subscribe to our newsletter for updates on new courses and offers</label><br>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the terms and conditions</label>
+        </fieldset>
+        </form><br>
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+ </body>
+ </html>

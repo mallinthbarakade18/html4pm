@@ -1,0 +1,115 @@
+<!-- Lab Task 2 date:14-08-2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML Forms Demonstration</h1>
+    <h3>1. Contact Form</h3>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name"> Full Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            <br><br>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+            <br><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+            <br><br>    
+            <label for="message"> Your Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required placeholder="Enter your message...."></textarea>
+            <br><br>
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Subscribe to  our newsletter</label>
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear Form">
+        </fieldset>
+    </form> 
+    <h3>2. User Registration form</h3>
+    <form>
+        <fieldset>
+            <legend>User Registration</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required placeholder="Enter your username">
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password">
+            <br><br>
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm your password">
+            <br><br>
+            <label for="DOB">Date of Birth:</label>
+            <input type="date" id="DOB" name="DOB" required>
+            <br><br>
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label>
+            <br><br>
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="" disabled selected>Select your country</option>
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="canada">Canada</option>
+            </select>
+            <br><br>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the <a href="#">terms and conditions</a></label>
+            <br><br>
+            <input type="submit" value="Register">
+        </fieldset>
+    </form>
+    <h3>3. Customer Feedback Form</h3>
+    <form>
+        <fieldset>
+            <legend>Survey Information</legend>
+            <p>How satisfied are you with our service?</p>
+            <progress value="5" max="10"></progress>
+            5/10
+            <p>Which Product have you used?(select all that apply)</p>
+            <input type="checkbox" id="product1" name="product" value="product A">
+            <label for="product1">Product A</label><br>
+            <input type="checkbox" id="product2" name="product" value="product B">
+            <label for="product2">Product B</label><br>
+            <input type="checkbox" id="product3" name="product" value="product C">
+            <label for="product3">Product C</label><br>
+            <input type="checkbox" id="product4" name="product" value="product D">
+            <label for="product4">Product D</label><br>
+            <p>how often do you use our services?</p>
+            <select id="usageFrequency" name="usageFrequency">
+                <option value="" disabled selected>Please select</option>
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="rarely">Rarely</option>
+            </select>
+            <p>Do you have any suggestions for improvement?</p>
+            <textarea id="suggestions" name="suggestions" rows="4" cols="50" 
+            placeholder="Enter your suggestions here..."></textarea>
+            <p>How likely are you to recommend us?</p>
+            <input type="radio" id="verylikely" name="recommend" value="very likely" required>
+            <label for="verylikely">Very Likely</label><br>
+            <input type="radio" id="likely" name="recommend" value="likely" required>
+            <label for="likely">Likely</label><br>
+            <input type="radio" id="neutral" name="recommend" value="neutral" required>
+            <label for="neutral">Neutral</label><br>
+            <input type="radio" id="unlikely" name="recommend" value="unlikely" required>
+            <label for="unlikely">Unlikely</label><br>
+            <input type="radio" id="veryunlikely" name="recommend" value="very unlikely" required>
+            <label for="veryunlikely">Very Unlikely</label><br><br>
+            <button>Submeet Survey</button>
+        </fieldset>
+    </form>
+</body>
+</html>
