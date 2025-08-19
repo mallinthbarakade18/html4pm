@@ -1,0 +1,61 @@
+ CSS Introduction ==>
+    CSS stnds for Cascading Style Sheets.Cascading refers to the Style 
+    that are applied to elements in a web page.
+    CSS is used to Style/Design the layout or appearance of web pages.
+    -- css can be used in html 
+        1) inline Style
+        2) internal Style
+        3) External Style
+
+i) Inline Style ==> It is used to apply styles to a specific element using 'style' 
+        as attribute.
+    
+    --<element style="property:value;.............">content</element>
+
+ii) Internal Style ==> It is used to apply styles to a specific element or 
+multiple element using selectors and style as an 'element'
+    <style>
+        selector{
+            property:value;.....
+        }
+    </style>
+
+    ==> inline style is powerfull goas to internal style
+
+iii) EXternal style : is it used to style to single/multiple element on separate file with
+    .css extention and attach it to the html using link tag
+
+    ==><link rel="stylesheet" href="path to css file"/>
+CSS style  orf internal and external can override each other based on which came last
+    ! important is the highest perfernce for proerties
+    h1{
+        color:red !important
+    }
+    ! important > inline > internal/external
+
+Basic Selectors : 
+    to apply style to multiple element we need to select to elemnet for that we use selectors. 
+    Most commen selectors are : 
+        i - Tag Name selectors : it is used to seelct all  elements of specific tsg name.
+            tagname{
+                propeties:values;
+            }
+
+        ii - class is attribute to element which use to select multiple  elements ,
+            one elements may contion multiple class names and multiple elements may 
+            contion the same class name
+                .classname{
+                    property:value;
+                    ...
+                    ...
+                }
+
+        iii - id ==> id is used to identify an elements uniqualy. 
+                No two elements have same id and no elements will contian more then one id
+                id > class >tagname 
+
+        iv - universal selectors ==> if you wnat apply to all elements in a webpage 
+            you can use universal selector (*) 
+            *{
+                text-align:center;
+            }
