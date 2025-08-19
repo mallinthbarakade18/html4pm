@@ -1,0 +1,257 @@
+<!-- 18-08-2025 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Demonstrating Fieldset with Tables -->
+    <h1>Demonstrating Fieldset with Tables</h1>
+    <p>
+      This example shows how fieldset can be used to group related tables and
+      form elements.
+    </p>
+    <fieldset>
+      <legend>Personal Information</legend>
+      <table border="1">
+        <tr>
+          <th colspan="2">Contact Details</th>
+        </tr>
+        <tr>
+          <td>Name:</td>
+          <td><input type="text" name="name" /></td>
+        </tr>
+        <tr>
+          <td>Last Name:</td>
+          <td><input type="text" name="last_name" /></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td><input type="email" name="email" /></td>
+        </tr>
+        <tr>
+          <td>Phone:</td>
+          <td><input type="tel" name="phone" /></td>
+        </tr>
+      </table>
+    </fieldset>
+    <fieldset>
+      <legend>Address Information</legend>
+      <table border="1">
+        <tr>
+          <th colspan="2">Mailing Address</th>
+        </tr>
+        <tr>
+          <td>Street:</td>
+          <td><input type="text" name="street" /></td>
+        </tr>
+        <tr>
+          <td>City:</td>
+          <td><input type="text" name="city" /></td>
+        </tr>
+        <tr>
+          <td>State/Province:</td>
+          <td><input type="text" name="state" /></td>
+        </tr>
+        <tr>
+          <td>Zip Code:</td>
+          <td><input type="text" name="zip" /></td>
+        </tr>
+        <tr>
+          <td>Country:</td>
+          <td><input type="text" name="country" /></td>
+        </tr>
+      </table>
+    </fieldset>
+    <fieldset>
+      <legend>Employment History</legend>
+      <p>Please list your last two employers.</p>
+      <table border="1">
+        <tr>
+          <th colspan="2">Most Recent Employers</th>
+        </tr>
+        <tr>
+          <td>Company Name:</td>
+          <td><input type="text" name="company" /></td>
+        </tr>
+        <tr>
+          <td>Position:</td>
+          <td><input type="text" name="position" /></td>
+        </tr>
+        <tr>
+          <td>Years Employed:</td>
+          <td><input type="number" name="years_employed" /></td>
+        </tr>
+      </table>
+      <br />
+      <table border="1">
+        <tr>
+          <th colspan="2">Previous Employers</th>
+        </tr>
+        <tr>
+          <td>Company Name:</td>
+          <td><input type="text" name="company" /></td>
+        </tr>
+        <tr>
+          <td>Position:</td>
+          <td><input type="text" name="position" /></td>
+        </tr>
+        <tr>
+          <td>Years Employed:</td>
+          <td><input type="number" name="years_employed" /></td>
+        </tr>
+      </table>
+    </fieldset>
+    <fieldset>
+      <legend>Submit Application</legend>
+      <table border="1">
+        <tr>
+          <td colspan="2">
+            <input type="checkbox" name="terms" />I agree to the terms and conditions
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button type="submit">Submit Application</button>
+            <button type="reset">Reset Form</button>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+    <!-- demonstrate the input fields in html5 -->
+    <h1>HTML input Fields Demonstration</h1>
+    <fieldset>
+      <legend>Text Input Types</legend>
+      <p>
+        The page demonstrate various HTML input fields without using a form
+        element.while forms are typically used to submit data,input fields can
+        be used independently for various UI interactions.
+      </p>
+      <h2>HTML text input</h2>
+      <label for="textInput">Text Input:</label>
+      <input type="text" id="textInput" placeholder="Enter text here" /><br />
+      <h2>Password Input</h2>
+      <label for="passwordInput">Password:</label>
+      <input
+        type="password"
+        id="passwordInput"
+        placeholder="Enter password here"
+      /><br />
+      <h2>Email Input</h2>
+      <label for="emailInput">Email:</label>
+      <input
+        type="email"
+        id="emailInput"
+        placeholder="Enter email here"
+      /><br />
+      <h2>Search Input</h2>
+      <label for="searchInput">Search:</label>
+      <input type="search" id="searchInput" placeholder="Search here" /><br />
+      <h2>URL Input</h2>
+      <label for="urlInput">Website URL:</label>
+      <input
+        type="url"
+        id="urlInput"
+        placeholder="https://www.example.com"
+      /><br />
+      <h2>Telephone Input</h2>
+      <label for="telInput">Telephone:</label>
+      <input type="tel" id="telInput" placeholder="(123) 456-7890" /><br />
+    </fieldset>
+    <fieldset>
+      <legend>Number Input Types</legend>
+      <h2>Number Input</h2>
+      <label for="numberInput">Number Input:</label>
+      <input type="number" id="numberInput" placeholder="Enter a number" /><br />
+      <h2>Range Input</h2>
+      <label for="rangeInput">Range:</label>
+      <input
+        type="range"
+        id="rangeInput"
+        min="0"
+        max="100"
+        value="50"
+      />50<br />
+      </fieldset>
+      <fieldset>
+        <legend>Date and Time Input Types</legend>
+        <h2>Date Input</h2>
+        <label for="dateInput">Date:</label>
+        <input type="date" id="dateInput" /><br />
+        <h2>Time Input</h2>
+        <label for="timeInput">Time:</label>
+        <input type="time" id="timeInput" /><br />
+        <h2>Datetime Local Input</h2>
+        <label for="datetimeInput">Datetime Local:</label>
+        <input type="datetime-local" id="datetimeInput" /><br />
+        <h2>Month Input</h2>
+        <label for="monthInput">Month:</label>
+        <input type="month" id="monthInput" /><br />
+        <h2>Week Input</h2>
+        <label for="weekInput">Week:</label>
+        <input type="week" id="weekInput" /><br />
+      </fieldset>
+      <fieldset>
+        <legend>Selection Type Input</legend>
+        <h2>CheckBox Inputs</h2>
+        <input type="checkbox" name="read"><label>Reading</label><br>
+        <input type="checkbox" name="travel"><label>Traveling</label><br>
+        <input type="checkbox" name="sports"><label>Sports</label><br>
+        <h2>Radio Inputs</h2>
+        <input type="radio" name="gender" value="male"><label>Male</label><br>
+        <input type="radio" name="gender" value="female"><label>Female</label><br>
+        <input type="radio" name="gender" value="other"><label>Other</label><br>
+        <h2>Color Picker</h2>
+        <label>Color Picker :</label><input type="color" id="colorInput" />
+      </fieldset>
+      <fieldset>
+        <legend>File Input</legend>
+        <h2>File Input</h2>
+        <label for="fileInput">Upload File:</label>
+        <input type="file" id="fileInput" /><br>
+        <h2>Multiple file Input</h2>
+        <label for="multipleFileInput">Upload Multiple Files:</label>
+        <input type="file" id="multipleFileInput" multiple /><br>
+        <h2>Hidden Input</h2>
+        <input type="hidden" id="hiddenInput" value="Hidden Value" />
+        <p>Note: This input is not visible to the user.</p>
+      </fieldset>
+      <fieldset>
+        <legend>Input Attributes Demonstration</legend>
+        <h2>Required Attribute</h2>
+        <label for="requiredInput">Required Input:</label>
+        <input type="text" id="requiredInput" required  placeholder="the field is required"/><br />
+        <h2>ReadOnly Attribute</h2>
+        <label for="readonlyInput">ReadOnly Input:</label>
+        <input type="text" id="readonlyInput" readonly value="Naresh I Technologies" /><br />
+        <h2>Disabled Attribute</h2>
+        <label for="disabledInput">Disabled Input:</label>
+        <input type="text" id="disabledInput" disabled value=" This is Disabled Input" /><br />
+        <h2>Pattern Attribute</h2>
+        <label for="patternInput">Pattern Input:</label>
+        <input type="text" id="patternInput" pattern="[A-Za-z]{3}" placeholder="Three letters only" /><br />
+        <h2>Autocomplete Attribute</h2>
+        <label for="autocompleteInput">Autocomplete Input:</label>
+        <input type="text" id="autocompleteInput" autocomplete="on" placeholder="Start typing..." /><br />
+        <h2>Autofocus Attribute</h2>
+        <label for="autofocusInput">Autofocus Input:</label>
+        <input type="text" id="autofocusInput" autofocus placeholder="I am focused!" /><br />
+    </fieldset>
+    <fieldset>
+        <legend>Related Output Elements</legend>
+        <h2>Output Element</h2>
+        <input type="text" id="outputInput" value="10" readonly/>+
+        <input type="text" id="outputInput2" value="20" readonly/>=
+        <input type="text" id="outputResult" value="30" readonly />
+        <h2>Progress Bar</h2>
+        <label>Download Progress :</label>
+        <progress id="progressBar" value="70" min="0" max="100"></progress>70%<br>
+        <h2>Meter Element :</h2>
+        <label>Disk Usage :</label>
+        <meter id="batteryMeter" value="0.75" min="0" max="1"></meter>75%
+    </fieldset>
+    <p>Note :Normally,these input fields are used to collect user data and provide a way to submit it to a server for processing.</p>
+  </body>
+</html>
