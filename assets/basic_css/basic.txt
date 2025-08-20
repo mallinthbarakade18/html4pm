@@ -1,0 +1,51 @@
+Colors :1-- colors desides the branch and user interface of webpage its recomeneded to use colors 
+        accordering to the brand and target attribute 
+        (website name :coolors,Realtime Colors)
+        2-- colors can be mentioned in css in various ways. they are:
+            i..hexcode-- Every color will have an hexa decimal code of 6 digits followed by #
+            ii.. RGB(Red,Green,Blue)-- Any color can be represented as a combination of colors
+                red ,green,and blue from 0 to 255 values
+                we can even assign alpha  0.0 to 1.0 showing tranceperncy from lightness to drakness
+            iii.. Name : VS Code provides multiple colors with name
+        
+Fonts : Every font family belongs to any one of  these 5 Types.
+    serif:(stroke are there in this font family) eg..Times New Romen
+        ==> this font have stroke at corners...
+    san-serif:(Stroke are not there in this font family) eg.. Arial,calibari
+        ==> this font not have corners
+    mono-space: eg..Script MT
+        ==> this fonts have equal height of letters like typewritter
+    Cursive: eg..MS Gothic
+        ==>These fonts are styled and curved.
+    Fantasy: eg..
+        ==>those fonts are used for special effects
+
+How to get fonts webpages 
+    font-family : it is used to apply fonts to specific elemnts
+    (Google Fonts :https://fonts.google.com/)
+    font-size : it is used to changed the size of the font
+    font-weight : it is used ro changed the thikness of the font(100/200/300/......)
+    font-style: it is used to changed the style of the font(normal/italic)
+
+we can even import fonts fome google font select using below procedure:
+search "google font" --> select font --> click "get font" -->click "get embed code"--> select "import" and copy 
+the code to css
+
+Units: Units are used to measure the size of elements . most used Units are
+ px(pixels) --
+        its the smallest unit of the screen
+ %(percentage) --
+        it is used X% of parents size
+ vh/vw --
+        it is the x$ of viewport  height or viewport width(viewport = screen)
+
+Background: we can assign a background color or background image to the webpage using following 
+            properties
+            1..background-color --> it is used to assign color background
+            2..background-image --> it is used to assign background images
+            using url or gradients
+            3..background-reapet : reapet/reapet-x/reapet-y/no-reapet
+            4..background-position :left/right/top/bottom/center
+            5..background-size : desid of the background
+                    -->auto/cover/combination
+            6..background-attachment:auto/scroll/fixed

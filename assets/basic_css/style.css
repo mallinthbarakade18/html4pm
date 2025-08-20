@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap');
+body{
+    height: 300vh;
+    /* background-image: url('../images/__-drz-__-CK7rdTauhDE-unsplash.jpg'); */
+    /* background-image: linear-gradient(orange, white, green); */
+    background-repeat: no-repeat;
+    background-position: center,center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+h1{
+    /* color: #ab12c0; */
+    /* color: rgb(100,25,255,1); */
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(red, blue, green);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 100px;
+}
+.div1{
+    height: 300px;
+    width: 600px;
+    background-color: red;
+}
+.div2 {
+    height: 50%;
+    width: 50%;
+    background-color: blue;
+   
+}
+
