@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Properties</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+    h2 {
+      margin: 20px;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      padding: 20px;
+    }
+    .box {
+      height: 120px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    /* Background examples */
+    .bg1 { background-color: #3498db; }
+    .bg2 { background-color: #2ecc71; }
+    .bg3 { background-color: #e74c3c; }
+    .cover {
+      background: url('https://picsum.photos/id/237/400/200') no-repeat center;
+      background-size: cover;
+    }
+    .pattern {
+      background: url('https://picsum.photos/100/100') repeat;
+    }
+    .repeatx {
+      background: url('https://picsum.photos/150/100') repeat-x;
+    }
+    .fixed {
+      background: url('https://picsum.photos/300/200') no-repeat center fixed;
+      background-size: cover;
+    }
+    .position {
+      background: url('https://picsum.photos/id/1084/200/150') no-repeat right bottom;
+    }
+    .shorthand {
+      background: url('https://picsum.photos/200/150') no-repeat center/cover;
+    }
+    .origin {
+      background: url('https://picsum.photos/200/120') no-repeat;
+      background-origin: content-box;
+      border: 10px solid orange;
+      padding: 10px;
+    }
+    .clip {
+      background: url('https://picsum.photos/200/120') no-repeat;
+      background-clip: content-box;
+      border: 10px solid #ccc;
+      padding: 10px;
+    }
+    .blend {
+      background: url('https://picsum.photos/200/120') no-repeat center/cover, linear-gradient(to right, red, blue);
+      background-blend-mode: multiply;
+    }
+    .multiple {
+      background: url('https://picsum.photos/id/1025/100/100') top left no-repeat,
+                  url('https://picsum.photos/id/1018/200/200') bottom right no-repeat;
+      background-color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+  <h2>Background Properties</h2>
+  <div class="container">
+    <div class="box bg1">background-color 1</div>
+    <div class="box bg2">background-color 2</div>
+    <div class="box bg3">background-color 3</div>
+    <div class="box cover">background-image (cover)</div>
+    <div class="box pattern">background-repeat (pattern)</div>
+    <div class="box repeatx">repeat-x</div>
+    <div class="box fixed">background-attachment: fixed</div>
+    <div class="box position">background-position</div>
+    <div class="box shorthand">background shorthand</div>
+    <div class="box origin">background-origin</div>
+    <div class="box clip">background-clip</div>
+    <div class="box blend">blend-mode: multiply</div>
+    <div class="box multiple">multiple backgrounds</div>
+  </div>
+</body>
+</html>
