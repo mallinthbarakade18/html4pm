@@ -49,3 +49,43 @@ Background: we can assign a background color or background image to the webpage 
             5..background-size : desid of the background
                     -->auto/cover/combination
             6..background-attachment:auto/scroll/fixed
+
+    Linear Gradients : gradients are the trancemation of one color to another . linear gradient assigns in straight way
+                    background-image:linear-gradient(position,color1,color2......)
+                    --> position can be to be to left/ to right/to bottom/to top/xdeg
+                    we can even assign the gradient or image text
+                    color:transparant;
+                    background:image:linear-gradient(color1,color2,...);
+                    background-clip:text;
+
+    Radial-gradient :it is used to assign gradients circuler way.
+                    background-image:radial-gradient(color1,color2,...)
+                
+    Box Model : Browsers treat Every element as a box Contion 
+            i border
+            ii border-redius
+            iii padding
+            iv margin
+
+        i..Border : border ia the surounding line for an element 
+                border: size,shape,color
+            now we can assign border-left,border-right,border-top,border-bootom
+        ii..Border-radius : it is corner radius suround the border corners.
+                border-radius:size;
+                50% of border-radius make actual circle for square shape
+                We can also assign each corner radius separately
+        iii..padding : it is space between border and actual content element(inside the element)
+                padding:size;
+            we can also assign padding as padding-left,padding-right,padding-top,padding-bottom
+            Noramally ,padding makes each box increse its height or width becouse by default all are content boxes,
+            so we need to use ==>box-sizing:border box;
+
+        iv..Margin : we can also assign margin as margin-left,margin-right,margin-top,margin-bottom  
+            margin:size
+
+    Note==> before you projects start you can asstrick .....
+        *{
+            margin:0;
+            padding:0;
+            bax-sizing:border-box;
+        }

@@ -1,0 +1,41 @@
+/* h1.h11{
+    height: 100vh;
+    background-image: linear-gradient(violet,indigo,blue,yellow,green,orange,red);
+} */
+h1.virat{
+    text-align: center;
+    font-size: 200px;
+    background-image: linear-gradient(to right, violet, indigo, blue, yellow, green, orange, red);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    border: 5px solid black;
+    border: 5px solid black;
+    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom: 5px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 5);
+    margin-left: 50px;
+    margin-right: 50px;
+     } 
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        text-align: center;
+        height: 100vh;
+    }
+    img{
+        margin-top: 50px;
+        width: 250px;
+        height: 300px;
+        border-radius: 50%;
+
+    }
