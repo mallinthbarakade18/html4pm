@@ -1,3 +1,17 @@
+ CSS :
+    1. Introduction
+    2. Basic Selectors
+    3. Background (imaGes,colors,gradiens),text
+    4. colors ,units,fonts
+    5. Box model(border,border-radius ,margin,padding)
+    float,display
+    positionflex
+    gradienstarnsitions,animations
+    Advamced CSS
+    Responsiveness(Media Queries)
+    HTML,CSS Website
+ 
+ 
  CSS Introduction ==>
     CSS stnds for Cascading Style Sheets.Cascading refers to the Style 
     that are applied to elements in a web page.

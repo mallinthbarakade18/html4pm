@@ -1,0 +1,16 @@
+Float :
+        Float is use any element to make any element floatting to the left or right side of scrren.
+        It makes the element remove from actual execution and next element takes up the space of floatting element
+            ==> float:left/right/none;
+
+        We can even clear the floatting element for any other elements using 
+            ==> clear:left/right/both;
+Display :
+        - display is use to arrengs the elements in a specific way
+        - display:block -->will make the elements into block so that each elements display in new line
+        - display:inline --> will make the elements into inline so that each elements the previous elements
+            (maintains same flow)
+            but inline elements cannot handle height/width/vertical margins
+        - display:inline-block --> works like inline but accepts height and width
+        - display:none --> removes the elements(visibility:hidden just hides the element)
+        
