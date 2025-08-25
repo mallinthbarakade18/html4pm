@@ -1,0 +1,39 @@
+==>23/08/2025
+Position : Position is use to keep element it different places in user interface .theree are 5 position available in css such as 
+1.absolute 
+2. Reletive 
+3. Static
+4. Sticky
+5. Fixed 
+==>
+1. Static : by default,all elements are static , static element can not have top,left, right, bottom 
+2. Absolute: absolute element move according to the position of body so left , left:0px will actually move towards leftmost end of screen .
+     scrolling have impact on absolute 
+3. Reletive: reletive elements move according to the position of current Position,so left:0px will 
+    not have impact towards it
+4. Fixed : fixed element also move according to the body it will not scrolling
+5. Sticky: sticky he is nothing but reletive+ fixed initially it stays like reletive but once it    
+     certain point,it becomes fixed until it parent end reached
+
+================================================================================================
+==>25/08/2025
+
+Flexbox : Flexbox is used to arrange the element in single direction either roe or column
+          1.. Parent Properties :  Flexbox allowes is parent to have bellow prperties like 
+               1==> Display-Flex--> it is used to arrange to child in d=single direction(default row)
+               2==> Flex-direction --> it is used to aranged child ites in specific direction(row/column/row-reverce/column-reverce)
+               3==>gap --> it is used to provide gap between the items
+                    axis in which element are areenged is calld main axis and axis in which element not arranged
+                    (opposite main axis)is called cross Axix 
+               4==>justify-content --> it is use dto move the element along the main axis (left/right/center/start/end/space-between....)
+               5==>align-items --> it is use dto move the element along the cross axis (left/right/center/start/end)
+               6==>flex-wrap --> it is used to wrap the elements into new lines
+               7==>align-content--> it is used to move the lines done by flex wrap
+
+          2..Child Properties : 
+               1==> order : it is used arrange child ites individually at any place by default order is 0 and elements
+                         are aranged based on order increassing order
+               2==> alighn-self : it is used to adjust element individually across cross axis 
+               3==> flex-shirnk : it is used to shrink more thsn the other elements
+               4==> flex-grow : it is used to grow more than theother elements
+               5==> flex-basis : it is used make an elements same without grow or shrink

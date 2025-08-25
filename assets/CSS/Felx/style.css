@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent{
+    height: 300px;
+    width: 500px;
+    display: flex;
+    flex-direction: row; 
+    gap: 5px;
+    justify-content: space-around;
+    align-items:end;
+    border: 5px dotted red;
+}
+.child{
+    background-color: rgb(197, 93, 8);
+    color: white;
+    font-size: 24px;
+    border: 1px solid white;
+    height: 50px;
+    width: 50px;
+    /* width: 100%;
+    height: 100%; */
+}
