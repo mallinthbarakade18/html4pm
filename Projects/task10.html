@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h3{
+            text-align: center;
+            margin-top: 10px;
+            border: 1px solid black;
+            
+        }
+        .div-static{
+            position: static;
+            background-color: blue;
+            margin-left: 20px;
+            margin-top: 20px;
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        .div-relative{
+            position: relative;
+            background-color: green;
+            margin-left: 20px;
+            margin-top: 20px;
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        .abs-fixed{
+            position: relative;
+            height: 250px;
+            width: 150px;
+        }
+        .div-absolute{
+            position: absolute;
+            background-color: red;
+            margin-left: 900px;
+            margin-top: 20px;
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        .div-fixed{
+            position: fixed;
+            background-color:pink;
+            margin-left: 900px;
+            margin-top: 15px;
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        .div-sticky{
+          position: sticky;
+            background-color: rgb(189, 243, 9);
+            margin-left: 20px;
+            margin-top: 15px;
+            margin-bottom: 100px;
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            border-radius: 5px;  
+        }
+        h4{
+            margin-top:45px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        hr{
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS Position Properties Demonstration</h3><hr>
+    <div class="div-static">
+        <h4>Static</h4>
+    </div><hr>
+    <div class="div-relative">
+        <h4>Relative</h4>
+    </div><hr>
+    <div class="abs-fixed">
+        <div class="div-absolute">
+        <h4>Absolute</h4>
+    </div>
+    <div class="div-fixed">
+        <h4>Fixed</h4>
+    </div>
+    </div><hr>  
+        <div class="div-sticky">
+            <h4>Sticky</h4>
+        </div>
+</body>
+</html>
