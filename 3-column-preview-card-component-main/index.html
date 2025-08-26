@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+            * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+            }
+            p{
+              color: hsla(0, 0%, 100%, 0.75);
+            }
+            body {
+              background-color: aqua;
+              align-items: center;
+              justify-content: center;
+              font-size: 15px;
+              font-family: 'Lexend Deca', sans-serif;
+              font-weight: 400;
+
+            }
+            .main{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 50px;
+              height: 63vh;
+              width: 50%;
+              margin-top: 80px;
+              margin-left: 250px;
+            }
+            .Sedans{
+              height: 290px;
+              flex: 1;
+              padding: 20px;
+              background-color: hsl(31, 77%, 52%);
+
+            }
+            .SUVs{
+              height: 290px;
+              flex: 1;
+              padding: 20px;
+              background-color:hsl(184, 100%, 22%);
+            }
+            .Luxury{
+              height: 290px;
+              flex: 1;
+              padding: 20px;
+              background-color: hsl(179, 100%, 13%);
+            }
+            h1{
+              color: white;
+              font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              margin-top: 20px;
+              margin-bottom: 20px;
+            }
+            button{
+              font-size: small;
+              background: white;
+              border: none;
+              margin-top: 20px;
+              border-radius: 20px;
+              align-items: center;
+              margin-left: 20px;
+              padding:10px;
+            }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="Sedans">
+        <h1>Sedans</h1>
+        <p>
+          Choose a sedan for its affordability and excellent fuel economy. Ideal
+          for cruising in the city or on your next road trip.
+        </p>
+        <button>Learn More</button>
+      </div>
+      <div class="SUVs">
+        <h1>SUVs</h1>
+        <p>
+          Take an SUV for its spacious interior, power, and versatility. Perfect
+          for your next family adventure make Fun.
+        </p>
+        <button>Learn More</button>
+      </div>
+      <div class="Luxury">
+        <h1>Luxury</h1>
+        <p>
+          Cruise in the best car brands without the bloated prices. Enjoy the
+          enhanced comfort of a luxury rental and arrive in style.
+        </p>
+        <button>Learn More</button>
+      </div>
+    </div>
+  </body>
+</html>
