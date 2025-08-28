@@ -37,3 +37,11 @@ Flexbox : Flexbox is used to arrange the element in single direction either roe 
                3==> flex-shirnk : it is used to shrink more thsn the other elements
                4==> flex-grow : it is used to grow more than theother elements
                5==> flex-basis : it is used make an elements same without grow or shrink
+
+=========================================================================================================================
+28/08/2025 
+
+Grid===>
+
+     grid is a modern responsive css layout it is usd to display items or elements
+     in two dimentional way(row/column) in a web page.
