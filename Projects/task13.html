@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cards</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: lightgray;
+      }
+      .main {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .header {
+        height: 50px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 20px;
+        text-align: center;
+        border: 2px solid black;
+        background: lightblue;
+      }
+      section {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+      .card {
+        background: white;
+        height: 510px;
+        width: 450px;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      img {
+        justify-content: center;
+        width: 410px;
+        height: 315px;
+      }
+      h3 {
+        text-align: center;
+        margin: 10px 0;
+      }
+      button {
+        background-color: blueviolet;
+        padding: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <h1>Welcome to My Website</h1>
+      </div>
+      <section>
+        <div class="card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3vvJBU7XHWrNGzH4FgSQ7R2oipr8smxAFFg&s"
+            alt=""
+          />
+          <h3>Bird 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+            laboriosam perferendis ducimus sunt voluptates molestiae quaerat
+            accusamus modi, reiciendis quisquam tenetur magnam sit nesciunt
+            quasi, excepturi quam soluta nisi. Suscipit.
+          </p>
+          <button>View More</button>
+        </div>
+        <div class="card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQitnM-UfWQqmxsXKcQKoUWt0nmS738A1ZGUQ&s"
+            alt=""
+          />
+          <h3>Bird 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+            laboriosam perferendis ducimus sunt voluptates molestiae quaerat
+            accusamus modi, reiciendis quisquam tenetur magnam sit nesciunt
+            quasi, excepturi quam soluta nisi. Suscipit.
+          </p>
+          <button>View More</button>
+        </div>
+        <div class="card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDlcqDBJP9FbNuDR4i4LkDjORTFiW9CdjEwQ&s"
+            alt=""
+          />
+          <h3>Bird 3</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+            laboriosam perferendis ducimus sunt voluptates molestiae quaerat
+            accusamus modi, reiciendis quisquam tenetur magnam sit nesciunt
+            quasi, excepturi quam soluta nisi. Suscipit.
+          </p>
+          <button>View More</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

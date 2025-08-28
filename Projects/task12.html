@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Cards</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      #parent {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: white;
+      }
+      .header {
+        height: 50px;
+        text-align: center;
+        border: 2px solid black;
+        background: lightblue;
+      }
+      .main{
+        display: flex;
+        gap : 20px;
+        border-radius: 50px;
+        padding: 8px;
+      }
+      .nav{
+        border-radius: 10px;
+        display: flex;
+        height: 535px;
+        width: 250px;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        background: lightgreen;
+      }
+      .footer{
+        border: 2px solid black;
+        height: 50px;
+        text-align: center;
+        background: lightgray;
+      }
+      .content{
+        border-radius: 20px;
+        display: flex;
+        height: 535px;
+        width: 1440px;
+        align-items: center;
+        justify-content: space-around;
+        border: 2px solid black;
+        background-color: beige;
+      }
+      .child1{
+        border-radius: 10px;
+        display: flex;
+        height: 150px;
+        width: 150px;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        background-color: aqua;
+      }
+      .child2{
+        border-radius: 10px;
+        display: flex;
+        height: 150px;
+        width: 150px;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        background-color: aqua;
+      }
+      .child3{
+        border-radius: 10px;
+        display: flex;
+        height: 150px;
+        width: 150px;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        background-color: aqua;
+      }
+      h2 {
+        margin-top: 15px;
+      }
+      .side-nav-title{
+        margin-top: 250px;
+        margin-left: 45px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div class="header">
+        <h2>Header</h2>
+      </div>
+      <main class="main">
+        <section class="nav">
+            <h4>Side Navigation</h4>
+        </section>
+        <section class="content">
+            <div class="child1"><p>Content 1</p></div>
+            <div class="child2"><p>Content 2</p></div>
+            <div class="child3"><p>Content 3</p></div>
+        </section>
+      </main>
+      <div class="footer">
+        <h2>Footer</h2>
+      </div>
+    </div>
+  </body>
+</html>
