@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            height: 100vh;
+        }
+        form{
+            height: auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            max-width: 750px;
+            margin: auto;
+        }
+        h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .signup input{
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .signup select{
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+        .option label{
+            margin-top: 20px;
+        }
+        .option input{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .text{
+            margin-top: 10px;
+        }
+        textarea{
+            margin-top: 5px;
+            width: 100%;
+            border-radius: 10px;
+        }
+        button{
+            margin-top: 15px;
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: blueviolet;
+            font-size: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Register for IT Trainig</h2>
+        <div class="signup">
+            <label for="name">Full Name</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email Address</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="phone">Phone Number</label><br>
+            <input type="phone" id="phone" name="phone" required><br>
+            <label for="course">Select Course</label><br>
+            <select id="course" name="course" required>
+                <option value="">choose a course</option>
+                <option value="web-development">Web Development</option>
+                <option value="data-science">Data Science</option>
+                <option value="cyber-security">Cyber Security</option>
+            </select><br>
+        </div>
+        <div class="option">
+            <label for="radio">Preferred Learning mode :</label><br>
+            <input type="radio" id="online" name="mode" value="online" required>
+            <label for="online">Online</label><br>
+            <input type="radio" id="offline" name="mode" value="offline" required>
+            <label for="offline">Offline</label><br>
+            <label for="skills">Skills you already know :</label><br>
+            <input type="checkbox" id="html" name="skills" value="html">
+            <label for="html">Html</label><br>
+            <input type="checkbox" id="css" name="skills" value="css">
+            <label for="css">Css</label><br>
+            <input type="checkbox" id="js" name="skills" value="js">
+            <label for="js">JavaScript</label><br>
+            <input type="checkbox" id="java" name="skills" value="java">
+            <label for="java">Java</label><br>
+            <div class="text">
+            <label for="notes">Additional Notes:</label><br>
+            <textarea id="notes" name="notes" rows="4" cols="50" placeholder="typing here....."></textarea>
+            </div>
+        </div>
+        <button type="submit">Submit Registration</button>
+    </form>
+</body>
+</html>
