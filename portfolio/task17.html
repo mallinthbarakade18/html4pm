@@ -1,0 +1,261 @@
+<!-- 02/09/2025 -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlipKart Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            background-color: #f3f0f0;
+        }
+        /* Header */
+        header{
+            height: 70px;
+            width: 100%;
+            background-color: #2874f0;
+            display: flex;
+            padding: 10px;
+        }
+        .head{
+            display: flex;
+            flex-direction: row;
+        }
+        .logo{
+            width: 100%;
+            display: flex;
+        }
+        .logo>img{
+            border-radius: 10px;
+        }
+        .logo>h1{
+            color: white;
+            font-size: 30px;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        .right{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        .right>input{
+            width: 750px;
+            padding: 10px;
+            border-radius: 10px;
+            margin-left: 250px;
+        }
+        button{
+            background: transparent;
+            border: none;
+            color: white;
+            border-radius: 10px;
+            font-size: 24px;
+        }
+        #login{
+            width: 80px;
+            margin-left: 80px;
+        }
+        .right>a{
+            color: white;
+            text-decoration: none;
+            font-size: 22px;
+            margin-left: 20px;
+        }
+        #cart{
+            width: 80px;
+        }
+        #body1{
+            padding: 40px;
+            height: 550px;
+        }
+        .search-box {
+      display: flex;
+      align-items: center;
+      background: white;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      padding: 8px 12px;
+      width: 800px;
+      margin-left: 150px;
+      transition: border-color 0.3s;
+    }
+
+    .search-box:focus-within {
+      border-color: #007BFF;
+    }
+
+    .search-box input {
+      border: none;
+      outline: none;
+      flex: 1;
+      font-size: 16px;
+    }
+
+    #search-icon {
+      font-size: 20px;
+      margin-left: 10px;
+      color: #333;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #search-icon:hover {
+      color: #007BFF;
+      transform: scale(1.2);
+    }
+    #cart-icon {
+        margin-top: 15px;
+      font-size: 20px;
+      margin-left: 10px;
+      color: #333;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #cart-icon:hover {
+      color: #007BFF;
+      transform: scale(1.2);
+    }
+        /* lower part */
+        #lower-head{
+            background-color: white;
+            padding: 15px;
+        }
+        .navbar{
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+        }
+        .navbar>a{
+            color: gray;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        /* main */
+        .clone{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .clone>h1{
+            color: blue;
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .clone>p{
+            color: gray;
+            font-size: 24px;
+        }
+        .items{
+            background-color: white;
+            width: 310px;
+            height: 150px;
+            display: inline-block;
+            margin: 20px 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .items>h2{
+            color: black;
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .items>p{
+            color: black;
+        }
+        footer{
+            background-color: black;
+            padding: 30px;
+        }
+        .foot{
+            text-align: center;
+        }
+        .foot>a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 0 20px;
+        }
+        .foot>p{
+            margin-top: 50px;
+            color: #fff;
+        }
+    </style>
+ </head>
+ <body>
+    <header>
+        <div class="head">
+            <div class="logo">
+            <img src="../assets/images/image.png" alt="logo">
+            <h1>FlipKart</h1>
+            </div>
+            <div class="right">
+             <div class="search-box">
+                <input type="search" placeholder="Search for products">
+                 <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <button id="login">Login</button>
+            <a href="">More Menu</a>
+            <i id="cart-icon" class="fa-solid fa-cart-shopping"></i><button id="cart">Cart</button>
+            </div>
+        </div>
+    </header>
+     <section id="lower-head">
+            <div class="navbar">
+                <a href="">Electronics</a>
+                <a href="">Tv & Appliances</a>
+                <a href="">Men</a>
+                <a href="">Women</a>
+                <a href="">Kids</a>
+                <a href="">Home & Furniture</a>
+                <a href="">Beauty</a>
+            </div>
+        </section>
+    <main>
+        <section id="body1">
+            <div class="clone">
+            <h1>FlipKart Header & Footer Clone</h1>
+            <p>This is a clone of the FlipKart header and footer using HTML and CSS.</p>
+            </div>
+            <div class="items">
+                <h2>Phone</h2>
+                <p>Discover the latest in phone technology and entertainment.</p>
+            </div>
+            <div class="items">
+                <h2>Tv</h2>
+                <p>Discover the latest in TV technology and entertainment.</p>
+            </div>
+            <div class="items">
+                <h2>Clothes</h2>
+                <p>Discover the latest in clothing and fashion trends.</p>
+            </div>
+            <div class="items">
+                <h2>Appliances</h2>
+                <p>Discover the latest in home appliances and kitchen gadgets.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="foot">
+            <a href="">About</a>
+            <a href="">Help</a>
+            <a href="">Customer Policy</a>
+            <a href="">Social</a>
+            <a href="">Mail Us</a>
+            <a href="">Address</a>
+            <a href="">Careers</a>
+            <p>&copy; 2025 FlipKart. All rights reserved.</p>
+        </div>
+    </footer>
+ </body>
+ </html>

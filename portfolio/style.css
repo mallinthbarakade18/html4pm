@@ -55,3 +55,135 @@ nav button a{
     color: black;
     text-decoration: none;
 }
+
+
+#banner{
+    display: flex;
+    max-width: 1280px;
+    margin:50px auto;
+    gap: 100px;
+}
+.right>img{
+    width: 100%;
+    height: 100%;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.left h2{
+    font-size:28px;
+}
+#role{
+    color: blue;
+}
+.left>p{
+    font-size: 24px;
+    color: gray;
+    text-align: justify;
+    line-height: 28px;
+}
+.buttons>button{
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+    font-size: 24px;    
+    border-radius: 20px;
+}
+button>a{
+    color: white;
+    text-decoration: none;
+}
+.secondBtn{
+    background-color: white !important;
+    border: 1px solid black !important;
+}
+.secondBtn>a{
+    color: black !important;
+}
+
+/* Skills Section */
+.title{
+    text-align: center;
+    font-size: 32px;
+    margin: 20px auto;
+    background-image: linear-gradient(to right,white,blue);
+    background-clip: text;
+    color: transparent;
+}
+section{
+    margin:70px auto;
+    max-width: 1280px;
+    display: flex;
+    gap: 30px;
+}
+.skill-tech{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px blue;
+}
+.skills{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.skill{
+    height: 100%;
+    width: 100%;
+}
+#ts{
+    text-align: center;
+}
+/* Projects Section */
+#projects{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.project{
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px blue;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.project img{
+    width: 100%;
+    height: 60%;
+}
+.project>button{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.project>h2{
+    text-align: center;
+}
+.project>p{
+    text-align: justify;
+    line-height: 1.3;
+}
+
+/* contact */
+#contact{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    margin:20px auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px blue;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
