@@ -21,7 +21,8 @@ header{
     align-items: center;
 }
 .logo{
-    font-size: 48px
+    font-size: 45px;
+    animation: upDown 0.5s  ease alternate infinite;
 }
 .logo>span{
     color: blue;
@@ -47,15 +48,18 @@ nav>ul>li>a:hover{
 nav button{
     padding: 10px;
     border-radius: 50%;
-    background-color: gray;
-    color: white;
+    border: none;
+    margin-left: 10px;
+    /* background-color: gray; */
     font-size: 24px;
 }
 nav button a{
-    color: black;
+    color: blue;
     text-decoration: none;
 }
-
+#git{
+    color: black;
+}
 
 #banner{
     display: flex;
@@ -66,6 +70,8 @@ nav button a{
 .right>img{
     width: 100%;
     height: 100%;
+    animation: slideFromRight 1s ease-in-out;
+    border-radius: 10px;
 }
 .left{
     display: flex;
@@ -186,4 +192,103 @@ footer{
     color: white;
     padding: 15px 0;
     text-align: center;
+}
+.floating-whatsapp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.floating-whatsapp img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    animation: zoomIn 0.5s ease alternate infinite;
+}
+@keyframes slideFromRight{
+    0%{
+        transform: translateX(500px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@keyframes upDown{
+    100%{
+        transform: translateY(-10px);
+    }
+}
+@keyframes zoomIn{
+    100%{
+        transform: scale(1.1);
+    }
+}
+/* media quaries */
+@media (max-width:576px){
+   header{
+    flex-direction: column;
+    gap: 20px;
+    margin: 50px;
+   }
+   nav{
+    flex-direction: column;
+   }
+   #banner{
+       flex-direction: column;
+   }
+   section{
+    margin: 25px !important;
+   }
+   .right>img{
+    display: none;
+   }
+   .buttons{
+       display: flex;
+       flex-direction: column;
+       gap: 10px;
+   }
+   #skills
+   {
+    flex-direction: column;
+   }
+   #projects{
+       grid-template-columns: repeat(1,1fr);
+   }
+}
+@media (min-width: 577px) and (max-width: 768px){
+  header{
+    flex-direction: column;
+    gap: 20px;
+    margin: 50px;
+  }
+  nav{
+    flex-direction: column;
+  }
+  #banner{
+      flex-direction: column;
+  }
+  section{
+    margin: 25px !important;
+  }
+   .right>img{
+    display: none;
+   }
+   .buttons{
+       display: flex;
+       flex-direction: column;
+       gap: 10px;
+   }
+   #skills
+   {
+    flex-direction: column;
+   }
+   #projects{
+       grid-template-columns: repeat(2,1fr);
+   }
+}
+
+@media (min-width: 769px) and (max-width: 996px){
+   
+}
+@media (min-width: 997px) and (max-width: 1280px){
+   
 }
