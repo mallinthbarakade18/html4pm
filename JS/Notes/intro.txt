@@ -1,0 +1,33 @@
+Javascript : Javascript is a client side programming language which is used to build interactive website 
+            using HTML and CSS.
+            Javascript controls the behaviour of web pages and provides functionality to the webpages
+
+            --Javascript was created a 1995(dec 4) by Breden Eich while working at Netscape.
+                    Initially is is named as Mocha letter change as LiveScript. to use popurarity of java ,
+                    Livescript renamed as Javascript
+
+            Javascript runs in the Browesers becouse every Broweser Contains an engine to run javascript 
+            called js Engine.
+
+            The popular js engine are V8(chrome) ,xspiderMonkey(Mozilla),chakra(edge).
+            It can also run without browsers .on server called node js
+
+            javascript is high level dynamic programming language that makes websites alive 
+            Think building website like Building a house 
+
+            HTML --> the walls,windows,doors,(Structure)--what we server
+            CS   --> Paintin,decorations,styles -----how its looks
+            Js   --> electricity,water,switches  ---How its works
+            
+
+
+            How to include javascript in html ?
+            --> we can include javascript in two ways they are
+                1. Internal javascript
+                2. External javascript
+
+            1...Internal javascript :
+                    we can include using 'script' as element
+                        eg: <script>
+                                here you can write javascript
+                            </script>
