@@ -28,6 +28,39 @@ Javascript : Javascript is a client side programming language which is used to b
 
             1...Internal javascript :
                     we can include using 'script' as element
+                        
                         eg: <script>
                                 here you can write javascript
                             </script>
+            
+            2...External JAvascript :
+                    we can include external javascript file(.js file) to html using script tag with src 'attribute'
+                    
+                    <script src="filepath"></script>
+
+    In javascript there are two types of Commentes 
+        1.. single line ==> //
+        2.. Multi line  ==> /* comment */
+    comments are used for user readablity purpose
+
+-------------------------------------------------------------------------------------------------------
+Varibles in Javascript :
+    in javascript we can declared using keywords such as ("var,let,const")
+    variables / literals are used to store the values 
+
+    Difference between let ,var and const ==>
+             var                    |             let                 |         const
+                                    |                                 | const variables can not be 
+var variable can be redeclared.     |   let and const cannot be       | changed                           
+ eg : var a=10;                     |   redecalred                    |
+        a=20;                       |                                 |
+var variables can v=be changed      |   let varibles you can aslo be  |
+    eg : var a=10;                  |   changed                       |
+            a=20;                   |   eg :let a=10;                 |
+                                    |            b=20;                |
+var variables are function scoped   |   let and const are block       |
+                                    |   scoped variables              |
+
+let a = +prompt("Enter a value");
+
+(+ is )
