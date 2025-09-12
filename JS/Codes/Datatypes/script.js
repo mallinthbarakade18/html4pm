@@ -92,6 +92,33 @@ str = "rushi name is chhakuli"
 console.log(str.split("a").length-1+str.split("e").length-1+str.split("i").length-1+str.split("o").length-1+str.split("u").length-1)//
 //8 is vhowels
 
+str = "Hello World";
+console.log(str.replaceAll('World','Welcome !'))//Hello Welcome !
+str = "      World       ";
+console.log(str.trim())//split is removing all spaces
+
+/*                bool                   */
+let x1 = true;
+console.log(typeof x1);//boolean
+// undefined is the default value for non exiting values or undecalred  values
+
+//undefined
+let y1;
+console.log(typeof y1) //undefined
+
+//console.log(z) error come ==>z is not defined
+
+//null
+
+let p =null;
+console.log(p)//null
+
+// differnce between undefined and null ==> inilization 
+
+let m = +prompt("Enter value");
+let result = (m%2==0)? "even" : "odd";
+console.log(`${m} is ${result}`)//5 is odd
+
 
 
 

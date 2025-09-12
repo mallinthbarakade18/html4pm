@@ -158,3 +158,54 @@ String : string is collection of characters
     console,log(`The name is ${x}`) // The name is jhon
 --------------------------------------------------------------------------------------------------------------
 Date : 12/09/2025
+              
+    String Methods :  
+        1 toUpperCase () -- used to convert string into uppercase 
+        2 toLowerCase() -- used to return converted value of string to lower case
+        3 length -- length used to return of number of character the string containes
+        4 charAt(i) -- used to return character at index i
+        5 indexOf('c') -- used to return first occurence of index of character c
+        6 lastindexOf('c')-- used to return last occurence of index of character c
+        7 startsWith('str) -- used to return true/false based on string is ending with str or not
+        8 slice(s,e) -- use dto return substring from index s to index e-1
+        9 slice(s)--used to return substring from index s to ending
+        10 spilt(v)-- used to split the string based on value v and return an array of sub string 
+            eg : "prasad".split('a') --> ['pr','s','d']
+        11 replace(old,new) --- used to replace first occurence old value to new value.for all occurence we can use replaceAll
+            eg : str = "Hello World";
+            console.log(str.replaceAll('World','Welcome !')) ==>Hello Welcome !
+        12 trim() -- used to retirn string after removing the spaces from starting and ending of string
+        13      eg: str = "      World       ";
+                    console.log(str.trim()) 
+
+
+    1 Boolean : boolean used to store/false if converted to number ,true  is converted is 1 and 
+                false is converted 0
+
+    2 undefined : undefined is primitive datatype / value that represent uninitialized or non exiting element
+                eg : let y;
+                console.log(y); // undefined expects future occurence of value
+    3 null : null is also the primitive value that indicates a variable has no value or no value
+-------------------------------------------------------------------------------------------------------------------
+Date : 12/09/2025
+
+                    ======================>Operators<=======================
+    Operators : Operators is used to perfrom opearation there are differnet types of Operators such as
+
+        1 . Arithemetic Operators : +,-,*,/(direct division),% (reminder),**(power)
+        2 . Reletional Operators : these Operators is used for camparision
+                > , < , >= , <= , == (campares values) ,===(comapres values and datatypes) , != (not equal) ,!==(returns nrgations of ===)
+        3 . Logical Operators : these Operators are used for combining statements logically
+                && , || , !
+        4 . increment and decrement : these are unary Operator which is use to increment and decrement
+                --> pre - increment --it first update value and returns the value
+                --> post - increment -- it first returns the value and update
+                ==> similar to decrement also
+        5 . ternary Operator or Conditional Operator : it is the short hand Operator  used to check the Condition true and false and make dicision based on that vslue
+                let a=10;
+                let c=(a>5) ? 20 : 30;
+        6 . nullish coalescing Operator : it will check two values and returns first value if it is not indefined or null else  it will return second value 
+                let a=10;
+                let b=20;
+                let c=a ?? b;
+
