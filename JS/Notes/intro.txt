@@ -61,6 +61,100 @@ var variables can v=be changed      |   let varibles you can aslo be  |
 var variables are function scoped   |   let and const are block       |
                                     |   scoped variables              |
 
+
+
+To accept input ,we use one method called promt ,but promt accepts only strings.
 let a = +prompt("Enter a value");
 
-(+ is )
+(+) is convert string datatype  to another datatype
+----------------------------------------------------------------------------------------------------------
+Date : 10/09/2025
+
+DataTpes in Javascript :
+
+    javascript is a dynamaic programming language . it means in javascript there is no fixed datatype
+    in javascript to a variable .the datatype of a variable is decided by value  it is holding.
+
+    There are two categories of datatypes :
+        1 primitive datatype
+        2 non primitive datatype
+
+    1 ..primitive datatype :
+        These datatype holds the value and comapres only value these datatypes in immuteable.
+        There are 5 primitive datatype such as :
+         1. number 
+         2. string
+         3. boolean
+         4. undefined
+         5. null
+    
+    Non - primitive datatype :
+        This datatypes holds the value and comapres the address and refernce. these datatype are muteable.
+        The basic non primitive datatypes are 
+        1. function
+        2. arrays
+        3. objects
+
+Can w change one datype to another dataype?
+--> the process of changing one datatype to another datatype is call type casting .
+    there are two types of type casting :
+        1. implicit Typecasting : 
+        2. explicit Typecasting :
+        
+        
+        1. implicit Typecasting : 
+            it is default or automatic conversion of datatypes based on opearation
+            eg :10 + "5" =105(because number and string not added)
+
+            eg : 5+4 =20,
+            5+'4'='54',
+            5 + + '4'=9,
+            5*'4'=20 
+        2. explicit Typecasting :
+            it is the forced eay of converting one dataype to another   
+                eg:5 + + '4'==> 5 + 4 ==> 9
+                5 + Number('4') ==> 9
+            
+ number : any numirical value is number
+            eg:4
+            eg:4.5
+        Every number can hava default methods such as toString,toPrecision etc...,
+        numbers  also have math methods such as sqrt,cbrt,pow,ceil,floar etc...,
+-------------------------------------------------------------------------------------------------------------
+Date : 11/09/2025
+
+1. toFixted() : it is used to return roundup value of n decimal digits
+2. toPrecision() : it is used roundup value of n total digits
+3. toString() : it is used to convert number to a string and differnt base system
+            eg : let x=25.4164;
+                x.toFixted(2) = 25.41
+                x.toPrecision(3) = 25.4
+                x = 25 ;
+                x.toString(2) = 11001
+    
+    Most used Math Methods are :
+            Math.sqrt(16)--returns square root of 16 is 4
+            Math.cbrt(27)--returns cube root 27 is 3
+            Math.pow(2,3) -- returns 2 power 3 is 8
+            same thing can be done like (2**3) =8
+            
+            Math.abs(-5)--retuens absolute value is always positive =5
+            Math.max(5,1,6,8) -- return maximum value =8
+            Math.min(5,1,6,8) -- retuens minimum value =1
+            Math.ceil(2.2) -- retuens nearest max value =3
+            Math.floor(2.2) -- retuens nearest min value =2
+            MAth.round(4.2) -- returns nearest integer = 4
+            Math.random() -- returns random value 0 and 1
+    
+String : string is collection of characters
+        eg : "abc123", "abc def" // space also count
+
+    ---String can be writtern single or double quotes.
+    ---There is no difference between but used alternatively in nested strings
+    ---String can also dynamic called "template literal". it uses backticks for strings and ${}
+       for dynamic values 
+
+    let x="jhon"
+    console,log(`The name is ${x}`) // The name is jhon
+--------------------------------------------------------------------------------------------------------------
+Date : 12/09/2025
