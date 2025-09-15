@@ -211,5 +211,62 @@ Date : 12/09/2025
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Date : 15/09/2025
 
-    
+Control Statement : 
+    The Decision making statemenet this are called control statement. which are used to control the flow the code based on Condition
+    most used Decision making statement are use if and switches
 
+    if : if is use das control statement where it leads to a block of code if the Condition is true 
+        there are multiple varitions for if such as :
+
+            1.simple if : 
+                if(Condition){
+                    //statement
+                } 
+            it deals wit1h if on only whe condition is true and it exexutes block of statement
+
+            2.if-else :
+                if(condition){
+                    //statement
+                }else{
+                    // statement
+                }
+                if the condition is true ,it will lead to the the then block else it will leads to the else block
+
+            3.if-else if:
+                if(condition 1){
+                    //statement
+                }
+                else if(condition 2){
+                    // statement
+                }
+                else{
+                    //statement
+                }
+                if condition is true it will lead to the then block else again it check another   
+                condition and reapeat this until last else part
+            
+            4.nested if : we can even keep an if statement inside another if called nested if
+                if(condition){
+                    if(condition){
+                        //statement
+                    }
+                }
+                else if(condition){
+                    //statement
+                }
+                else{
+                    //statement
+                }
+
+    Switch : switch works with multiple condions using cases its alternative approach on if else if 
+            each case by terminated by using "break" else it falls to the next case and always needs a case
+            for 'default'  entry
+
+            switch(Condition){
+                case 1: statement;break;
+                .
+                .
+                .
+                case n: //statement;break;
+                default: //statement
+            }
