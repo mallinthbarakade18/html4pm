@@ -60,4 +60,21 @@
 //     case 6: console.log(`Saturday`);break;
 //     default: console.log(`invalid choice`);
 // }
+// let i=1;
+// while(i<=10){
+// console.log(`${i} `);
+// i++;
+// }                            
 
+//                             let s="prasad"
+//                             for(i=0;i<=s.length-1;i+=2){
+//                                     console.log(s.charAt(i));
+//                             }
+                            // let arr=[5,4,3,2,1];
+                            // for(i=0;i<arr.length;i++){
+                            //     console.log(arr[i])
+                            // }
+            //                 let arr=[5,4,3,2,1];
+            //  for(let i of arr){
+            //     console.log(i)
+            //  }

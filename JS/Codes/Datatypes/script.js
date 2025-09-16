@@ -51,7 +51,7 @@ console.log(Math.ceil(Math.random()*6))
 
 console.log(Math.ceil(Math.random()*6)+7)
 
-console.log(Math.floor(Math.random()*7)+6)//7 to 14 numbers get randomally
+console.log(Math.floor(Math.random()*10)+10)//7 to 14 numbers get randomally
 /*---------------------------------------------------------------------------------------*/
 //strings :
 

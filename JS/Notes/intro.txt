@@ -43,6 +43,8 @@ Javascript : Javascript is a client side programming language which is used to b
         2.. Multi line  ==> /* comment */
     comments are used for user readablity purpose
 
+    ==> ` `(backticks) = is called template litteral
+
 -------------------------------------------------------------------------------------------------------
 Varibles in Javascript :
     in javascript we can declared using keywords such as ("var,let,const")
@@ -271,4 +273,75 @@ Control Statement :
                 default: //statement
             }
         
-    
+--------------------------------------------------------------------------------------------------------------------------------------
+Date :16/09/2025
+
+    Loops : Loops are used to iterate certain steatement again and again until a condition fails
+            There are two types of loops-->
+
+            1)Entry Control Loops
+            2)Exit Control Loops
+
+            1--> Entery Control loops :
+                This loops are used to check the condition at the starting of loop and run the statemenet
+                if the condition is true once the statements are over it again check the condion and reapeat the preocess
+
+                1-->While : while is a entry control loop which uses condition and updation and inilization in differnet statement
+                        Syntax: 
+                                inilization;
+                                while(condition){
+                                    //statement
+                                    updation
+                                }
+
+                            eg: print num 1 to 10 using while loop
+
+                            let i=1;
+                            while(i<=10){
+                                console.log(`${i} `);
+                                i++;
+                            }
+
+                2--> For :  for is a entry control loop which is use to iterate cetain statement bu using
+                            inilization ,condition and updation
+
+                            syntax : for(inilization;condition;updation){
+                                statement
+                            }
+
+                            eg :print alternate letters of given string (input : prasad o/p:p a a)
+                            let s="prasad"
+                            for(i=1;i<=x.length-1;i+=2){
+                                    console.log(x.charAt(i));
+                            }
+
+                            eg :let arr=[5,4,3,2,1];
+
+                            let[] arr={5,4,3,2,1};
+                            for(i=0;i<arr.length;i++){
+                                console.log(arr[i])
+                            }
+        
+        This is called standard -for
+        but in javascript there are other variations of for such as
+        "foe...of","for...in"
+
+        for-of :  it is used to iterate array element 
+            syntax : for(let i of arrayname){
+                //statement
+            }
+
+        eg : let arr=[5,4,3,2,1];
+             for(let i of arr){
+                console.log(i)
+             }
+
+        for-in : it is used to iterate array indexes/address
+             syntax : for(let i in arrayname){
+                //statement
+            }
+
+        eg : let arr=[5,4,3,2,1];
+             for(let i in arr){
+                console.log(i)
+             }
