@@ -413,5 +413,87 @@ Date :17/09/2025
                 }
                 console.log(`the sum of test ${+i+1} is ${sum}`)
              }
+----------------------------------------------------------------------------------------------------------------------
+Date : 18/09/2025
 
-            4. 
+Function : function is block of code which can be reusable.
+            Insted of implementing whole code we can divided the logical code into logical parys called functions
+                Main Advantages : 1..Reusability
+                                  2..Modularity
+                                  3..Easy to understand amd debug
+            
+            Every function will have function declration,funtion defination and function call
+        
+        Syntax: function function_name(parameters){
+            //defination
+        }
+        function_name(arguments);
+
+        Eg..Simple function : write a function that prints hello world and call it
+            function demo(){
+                console.log("Hello World");
+            }
+            demo();
+
+        Function can also accept parameters which are passed while calling the function
+        
+        Eg : write a function that takes two values and print thair sum
+        
+            function Sum(a,b){
+            let add=a+b;
+                console.log("Sum is : "+add);
+            }
+            Sum(10,20);//30
+
+        Function can even return the values 
+
+        Eg : write a function that accepats a stirng and retrun number of characters
+
+            function Charcters(str){
+                if(typeof(str)=='string'){
+                     return str.length;
+                }
+                else{
+                     return "input only strings"
+                }
+            }
+            let count=Charcters(1);
+            console.log(count)
+
+        Function as also treated as a variable in javascript so that whole function defination is stored
+        as a varibale we can even create function expressions
+
+            eg :
+                 function Charcters(){
+                    console.log("count")
+                }
+                console.log(Charcters)
+
+                o/p ://whole function print
+                ƒ Charcters(){
+                    console.log("count")
+                }
+
+                eg :
+
+                let x=function ()//function expression
+                {
+                    console.log("count")
+                }
+                x()
+                console.log(x)
+
+                o/p :
+
+                count
+                ƒ (){
+                        console.log("count")
+                    }
+
+                eg : write a function that print area circle usnig parameters
+
+                function area(r){
+                    return Math.PI*r*r;
+                }
+                let x=area(5)
+                console.log(x)//78.53981633974483
