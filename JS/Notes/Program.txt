@@ -176,3 +176,233 @@ console.log(`${(result+1)*10}`)
 
 40
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+																										Date : 16/09/2025
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Que 1 : Write a 'JavaScript' program to check and print that the given number is even or odd without using ternary operator and control statements and print the output on the console.
+--------
+
+Sample input : let a = 10
+Sample Output : EVEN
+
+Sample input : let a = 125
+Sample Output : ODD
+
+Note : Don't use any control statement only use logical operators and Take the input from the user using prompt() function.
+
+let n =+prompt("Enter Num : ");
+(n%2==0 && console.log(`Even`))||(n%2!==0 && console.log(`Odd`))
+
+Enter Num : 15
+Odd
+Enter Num : 20
+Even
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Que 2 : Write a 'JavaScript' program to check and print the Maximum number among two numbers without using ternary operator, control statements and predefined methods.
+--------
+
+Sample input : let a = 10 , b = 20
+Sample Output : MAX = 20
+
+Note : Don't use any control statement or predefined methods only use operators and Take the input from the user using prompt() function.
+
+let a =+prompt("Enter 1st Num : ");
+let b =+prompt("Enter 2nd Num : ");
+(a>b && console.log(`MAX = ${a}`))||(b>a && console.log(`MAX = ${b}`))
+
+Enter 1st Num : 25
+Enter 2nd Num : 45
+MAX = 45
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Que 3 : Write a 'JavaScript' program to check and print the Maximum number among three numbers without using ternary operator, control statements and predefined methods.
+--------
+
+Sample input : let a = 10 , b = 200, c = 134;
+Sample Output : MAX = 200
+
+Note : only use operators to solve the question and Take the input from the user using prompt() function..
+
+let a =+prompt("Enter 1st Num : ");
+let b =+prompt("Enter 2nd Num : ");
+let c =+prompt("Enter 3rd Num : ");
+(a>b && a>c && console.log(`MAX = ${a}`))||(b>a && b>c && console.log(`MAX = ${b}`))||(c>a && c>b && console.log(`MAX = ${c}`))
+
+Enter 1st Num : 10
+Enter 2nd Num : 50
+Enter 3rd Num : 51
+MAX = 51
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Que 4 :  Write a 'JavaScript' program to check and print the Maximum number among three numbers using ternary operator.
+--------
+
+Sample input : let a = 10 , b = 200, c = 134;
+Sample Output : MAX = 200
+
+Note : Take the input from the user using prompt() function.  
+
+let a =+prompt("Enter 1st Num : ");
+let b =+prompt("Enter 2nd Num : ");
+let c =+prompt("Enter 3rd Num : ");
+a>b && a>c ? console.log(`Max : ${a}`) : b>c ? console.log(`Max : ${b}`) : console.log(`Max : ${c}`);
+
+Enter 1st Num : 25
+Enter 2nd Num : 35
+Enter 3rd Num : 4
+Max : 35
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Que 5 :  Write a 'JavaScript' program to check and print that given number is even or odd using ternary operator.
+--------
+
+Sample input : let a = 10
+Sample Output : EVEN
+
+Sample input : let a = 125
+Sample Output : ODD
+                         
+Note : Take the input from the user using prompt() function. 
+
+let n =+prompt("Enter Num : ");
+n%2==0 ? console.log(`Even`) : console.log(`Odd`)
+
+Enter Num : 50
+Even
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Que 6 : A shopkeeper buys a TV set for Rs. 3500 and sells it at a profit of 27%. Apart from this a VAT of 12.7% and Service Charge is 3.87% is charged.
+-------  Write a JavaScript program to Display total selling price, profit along with vat and service charge.
+         To calculate the selling price, profit, VAT, and service charge, follow these steps:
+
+         1) Calculate the selling price:
+
+            Selling Price = Cost Price + Profit
+
+            Selling Price = Rs. 3500 + (27% of Rs. 3500)
+
+
+         2) Calculate the profit:
+
+            Profit = Selling Price - Cost Price
+
+
+         3) Calculate VAT:
+
+            VAT = 12.7% of Selling Price
+
+
+         4) Calculate Service Charge:
+
+            Service Charge = 3.87% of Selling Price
+
+    Sample output :
+            Cost Price: Rs. 3500.00
+            Profit (27%): Rs. 945.00
+            Selling Price (without VAT & Service Charge): Rs. 4445.00
+            VAT (12.7%): Rs. 564.52
+            Service Charge (3.87%): Rs. 171.00
+            Total Selling Price (with VAT & Service Charge): Rs. 5180.52
+
+let price =3500;
+let profit =price * 27/100;
+let selling_price = price+profit;
+let vat = selling_price * 12.7/100;
+let Service_Charge = selling_price *3.87/100
+let total =selling_price + vat + Service_Charge;
+console.log(`Cost Price: . ${price}`)
+console.log(`Profit (27%): Rs. ${profit}`)
+console.log(`Selling Price (without VAT & Service Charge): Rs. ${selling_price}`)
+console.log(`VAT (12.7%): Rs. ${vat}`)
+console.log(`Service Charge (3.87%): Rs. ${Service_Charge}`)
+console.log(`Total Selling Price (with VAT & Service Charge): ${total}`)
+
+Cost Price: . 3500
+Profit (27%): Rs. 945
+Selling Price (without VAT & Service Charge): Rs. 4445
+VAT (12.7%): Rs. 564.515
+Service Charge (3.87%): Rs. 172.0215
+Total Selling Price (with VAT & Service Charge): 5181.5365
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Que 2 : Develop a program for an online bus ticket booking platform called "Bus Ticket Booker."
+------  The platform offers tickets for a fixed price of Rs. 300 per seat. However, there are discounts available for senior citizens.
+        If a passenger's age is between 60 and 100 , they will receive a 20% discount on the total booking cost.
+
+        Write a JavaScript program for "Bus Ticket Booker" that takes the number of tickets and the age of the passenger as inputs and calculates the total booking cost after applying any     applicable discount using the ternary operator. The program should display the bill with a suitable message, including the total cost and the discount amount (if applicable).
+
+        Your task is to implement the program logic using only Ternary Operator.
+
+
+Example 1: Passenger is not a senior citizen
+Sample Input:
+              number of tickets: 3
+              age of the passenger: 45
+
+Sample Output:
+              Total cost before discount: Rs. 900.00
+              Discount amount: Rs. 0.00
+              Total cost after discount: Rs. 900.00
+
+
+Example 2: Passenger is a senior citizen
+Sample Input:
+              number of tickets: 2
+              age of the passenger: 65
+
+Sample Output:
+              Total cost before discount: Rs. 600.00
+              Discount amount: Rs. 120.00
+             Total cost after discount: Rs. 480.00
+
+Note : Take the input from the user using prompt() function.  
+
+Program :
+let sit =+prompt("Number of Tickets : ");
+let age =+prompt("passenger age : ");
+let before_cost= sit*300
+let discount = age>=60 && age<=100 ? before_cost * 20/100 : before_cost;
+let after_cost=before_cost-discount;
+console.log(`Total cost before discount: Rs. ${before_cost}.00`);
+console.log(`Discount amount: Rs. ${discount}.00`);
+console.log(`Total cost after discount: Rs. ${after_cost}.00`)
+
+Number of Tickets : 2
+passenger age : 65
+Total cost before discount: Rs. 600.00
+Discount amount: Rs. 120.00
+Total cost after discount: Rs. 480.00
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Que 3 : Write a C program that takes an integer as input and checks if it is a positive, negative, or zero.
+------- Display the appropriate message as output using the ternary operator.
+   
+
+    Sample Input:
+              enter a number: -1
+             
+
+    Sample Output:
+        you entered negative number
+
+
+    Sample Input:
+                 enter a number: 1
+
+    Sample Output:
+        you entered positive number
+
+    Sample Input:
+                  enter a number: 0
+     
+    Sample Output:
+        you entered zero
+
+Note : Take the input from the user using prompt() function.  
+
+let n =+prompt("Enter Num : ");
+n>0 ? console.log(`you entered positive number`) : n<0 ? console.log(`you entered negative number`) : console.log(`you entered zero`); 
+
+Enter Num : 0
+you entered zero
+
+Enter Num : 1
+you entered positive number
+
+Enter Num : -1
+you entered negative number

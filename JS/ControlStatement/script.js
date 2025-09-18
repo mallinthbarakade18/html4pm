@@ -78,3 +78,77 @@
             //  for(let i of arr){
             //     console.log(i)
             //  }
+// for(i=2;i<=20;i+=2){
+//     console.log(i+" ")
+// }
+
+
+// let x=3
+// for(i=1;i<=10;i++){
+//     console.log(x*i)
+// }
+
+// let num=121,rev=0
+// let temp=num
+
+// while(num!=0){
+//     let rem=num%10;
+//     rev=rev*10+rem;
+//     num=Math.floor(num/10);
+// }
+// if(temp==rev){
+//     console.log("palindrom")
+// }else{
+//     console.log("not palindrom")
+// }
+
+// //1. write js code to print sum of array elements
+
+// let arr=[5,4,3,2,1];
+// let sum=0;
+// for(let i=0;i<arr.length;i++){
+//     sum+=arr[i];
+// }
+// console.log(`Sum of array elements : `+sum);
+
+// //2. write a js code to check wether sum of digit is eqaual to product of digit for a given num
+
+// let n = +prompt("enter num");
+// sum=0;
+// let prod=1;
+// while(n!=0){
+//     let rem=n%10;
+//     sum+=rem;
+//     prod*=rem;
+//     n=Math.floor(n/10);
+// }
+// console.log("sum:"+sum);
+// console.log("prod:"+prod)
+// if(sum==prod){
+//     console.log("spy num");
+// }
+// else{
+//     console.log("not spy num");
+// }
+
+//using loops find the sum of nested arrays and print them
+            //eg : [[10,20,10,50],[0,10,30,40],[10,10,10,10]]
+
+             arr = [[10,20,10,50],[0,10,30,40],[10,10,10,10]]
+             for(let i=0;i<arr.length;i++){
+                let sum=0
+                for(let j=0;j<arr[i].length;j++){
+                    sum+=arr[i][j]
+                }
+                console.log(sum+" ")
+             }
+// second type
+             for(let i of arr){
+                let sum=0
+                for(let j of i){
+                    sum+=j;
+                }
+                console.log(sum)
+             }
+
+         

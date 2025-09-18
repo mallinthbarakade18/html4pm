@@ -279,8 +279,8 @@ Date :16/09/2025
     Loops : Loops are used to iterate certain steatement again and again until a condition fails
             There are two types of loops-->
 
-            1)Entry Control Loops
-            2)Exit Control Loops
+            1..Entry Control Loops
+            2..Exit Control Loops
 
             1--> Entery Control loops :
                 This loops are used to check the condition at the starting of loop and run the statemenet
@@ -336,7 +336,7 @@ Date :16/09/2025
                 console.log(i)
              }
 
-        for-in : it is used to iterate array indexes/address
+        for-in : it will used to iterate array indexes/address
              syntax : for(let i in arrayname){
                 //statement
             }
@@ -344,4 +344,74 @@ Date :16/09/2025
         eg : let arr=[5,4,3,2,1];
              for(let i in arr){
                 console.log(i)
+             } 
+
+    Do-while : do-while is exit control loop is check the condition at the exit body 
+                is the condition is true ,it repeats the loop else it terminates
+
+                syntax: inilization;
+                        do{
+                            //statement
+                        }while(condition);
+                
+                eg : print even nums between 1 to 20 
+
+                let i=2;
+                do{
+                    console.log(i+" ");
+                    i+=2
+                }while(i<=20);
+--------------------------------------------------------------------------------------------------------------------------------------
+Date :17/09/2025
+
+    Tasks : 
+        1. write js code to print sum of array elements
+
+        let arr=[5,4,3,2,1];
+        let sum=0;
+        for(let i=0;i<arr.length;i++){
+            sum+=arr[i];
+        }
+        console.log(`Sum of array elements : `+sum);
+
+        2. write a js code to check wether sum of digit is eqaual to product of digit for a given num
+
+        let n = +prompt("enter num");
+        sum=0;
+        let prod=1;
+        while(n!=0){
+            let rem=n%10;
+            sum+=rem;
+            prod*=rem;
+            n=Math.floor(n/10);
+        }
+        console.log("sum:"+sum);
+        console.log("prod:"+prod)
+        if(sum==prod){
+            console.log("spy num");
+        }
+        else{
+            console.log("not spy num");
+        }
+
+        3. using loops find the sum of nested arrays and print them
+            eg : [[10,20,10,50],[0,10,30,40],[10,10,10,10]]
+
+                         arr = [[10,20,10,50],[0,10,30,40],[10,10,10,10]]
+             for(let i=0;i<arr.length;i++){
+                let sum=0
+                for(let j=0;j<arr[i].length;j++){
+                    sum+=arr[i][j]
+                }
+                console.log(sum+" ")
              }
+            // second type
+             for(let i of arr){
+                let sum=0
+                for(let j of i){
+                    sum+=j;
+                }
+                console.log(`the sum of test ${+i+1} is ${sum}`)
+             }
+
+            4. 
