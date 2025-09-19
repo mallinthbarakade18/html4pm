@@ -467,7 +467,7 @@ Function : function is block of code which can be reusable.
                  function Charcters(){
                     console.log("count")
                 }
-                console.log(Charcters)
+                console.log(Charcters)//print function
 
                 o/p ://whole function print
                 ƒ Charcters(){
@@ -497,3 +497,64 @@ Function : function is block of code which can be reusable.
                 }
                 let x=area(5)
                 console.log(x)//78.53981633974483
+---------------------------------------------------------------------------------------------------------------------
+Date : 19/09/2025
+
+    Callback Functions : callback function are the functions which are passed as parameter to a 
+                        another function
+
+                        eg : function mad(){
+                            console.log("I'm mad now");
+                        } 
+                        function  mainFun(x){
+                            x();
+                        }
+                        mainFun(mad);
+
+                        o/p :I'm mad now
+
+                        eg : function message(){//callback function
+                            console.log(`It Is a message`);
+                        }
+                        function rani(p){
+                            p();
+                        }
+                        rani(message);//higher of function
+
+                        o/p : It Is a message
+
+                        eg : 
+                        function convert(s){
+                            return s.toUpperCase();
+                        }
+                        function firstLetter(fun){
+                            let x= fun("prasad");
+                            return x[0];
+                        }
+                        console.log(firstLetter(convert));//p
+
+                        eg : 
+                        function greet(name,fun){
+                            fun(name);
+                        }
+                        function sayName(n){
+                            console.log(`My name is ${n}`);
+                        }
+                        console.log(greet("prasad",sayName));//My name is prasad
+
+        sayName is function which is passed int the parameter of greet,so sayName is callback
+        function and greet (function which receives callback) is higher order function 
+
+
+    Closures : Closures is a memory technique in which inner loop remember the outer loop
+                values even after outer execution ended
+
+                eg : 
+                    function outer(){
+                        let a=5;
+                        function inner(){
+                            console.log(a);
+                        }
+                        return inner;
+                    }
+                    let x=outer();

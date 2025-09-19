@@ -1,6 +1,11 @@
-function area(r){
-    return Math.PI*r*r;
-}
-let x=area(5)
-console.log(x)
 
+                    function outer(){
+                        let a=5;
+                        function inner(){
+                            console.log(a);
+                        }
+                        return inner;
+                    }
+                    console.log(outer());
+                    
+                    
