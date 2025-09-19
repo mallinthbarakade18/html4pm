@@ -553,8 +553,25 @@ Date : 19/09/2025
                     function outer(){
                         let a=5;
                         function inner(){
+                            ++a;
                             console.log(a);
                         }
                         return inner;
                     }
                     let x=outer();
+                    x();//6
+                    x();//7
+                    x();//8
+            
+    IIFE (immediate Invoke Function expression) : an IIFE is a function that is defined and invoked 
+            called immediately.It is used to hide the data from global scope
+
+            eg :
+                (function(){
+                     console.log(`hi`);
+                })();//hi
+            eg : (function(){
+                let pass="123456";
+                    console.log(`hi`);
+                })();
+            console.log(pass)//error
