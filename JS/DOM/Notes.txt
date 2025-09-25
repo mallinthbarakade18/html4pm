@@ -1,0 +1,14 @@
+Date : 24/09/2025
+------------------------------------------------------------------------------------------------------------------
+Object : Object is Collection of key value pairs where each key is indexd to specific value .
+         object are represented by curly braces {}
+
+         let obj = {
+            name : "raj",
+            age : 25
+         }
+         console.log(obj)//normal method
+         or
+         console.log(obj.age,obj.name)//dot method
+         or 
+         console.log(obj["name"],obj["age"])//index signature
