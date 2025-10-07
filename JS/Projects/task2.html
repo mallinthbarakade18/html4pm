@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //    - You are building a simple user profile page. How would you store and display a user's name, age, and email address using JavaScript objects?
+    //   let info ={}
+    //       info.name=prompt("Enter your name:"),
+    //       info.age=prompt("Enter your age:"),
+    //       info.email=prompt("Enter your email:"),
+      
+    //    console.log(info);
+    //    document.write("Name : "+info.name+"   Age : "+info.age+"   Email : "+info.email);
+
+      //    - You're listing a single item for sale on an online marketplace. How would you store its essential details like name, price, and availability using JavaScript objects?
+      //         let item={
+      //             product:prompt("Enter product name:"),
+      //             price:prompt("Enter product price:"),
+      //             inStock:prompt("Is the product in stock? (true/false)"),
+      //         }
+      //         console.log(item);
+      //         document.write("Product Name : "+item.product+"  Price : $"+item.price+".00   Availabile : "+(item.inStock==='true' && 'True'?"yes":"No"));
+    
+//    You're building a simple library catalog. How would you store information about a book, including its title, ISBN, and publication year, but also details about its author, like     their name and nationality?
+        // let book={
+        //     title:prompt("Enter book title:"),
+        //     ISBN:prompt("Enter book ISBN:"),
+        //     publicationYear:prompt("Enter publication year:"),
+           
+        //     author:{
+        //         name:prompt("Enter author name:"),
+        //         nationality:prompt("Enter author nationality:")
+        //     }
+        // }
+        // console.log(book);
+        // document.write("Book Title : "+book.title+"  Author Name : "+book.author.name+"  Publication Year : "+book.publicationYear+"("+(book.author.nationality+" author)"));
+        
+//    A user has some saved preferences, like darkMode and emailNotifications. If they decide they no longer want emailNotifications, how would you remove that specific preference from     their settings object?
+
+//    A user has some saved preferences, like darkMode and emailNotifications. If they decide they no longer want emailNotifications, how would you remove that specific preference from     their settings object?
+
+        let setting={
+            darkMode:true,
+            emailNotifications:true,
+            locale:"en-US",
+        }
+        delete setting.emailNotifications;
+        console.log(setting);
+
+        let setting1={
+            darkMode:false,
+            smsNotifications:true,
+            locale:"en-US",
+        }
+        delete setting1.smsNotifications;
+        console.log(setting1);
+        </script>
+  </body>
+</html>

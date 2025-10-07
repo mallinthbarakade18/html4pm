@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #product-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .product-card{
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px gray;
+            width: 20%;
+            height: 30%;
+            padding: 10px;
+
+        }
+        .product-card .img{
+            width: 100%;
+            height: 50%;
+        }
+        .img img{
+            height: 100%;
+            width: 100%;
+            border-top-left-radius: 10px;
+             border-top-right-radius: 10px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>E commerce site </h1>
+    <div class="filter">
+<select name="" id="" onchange="filter(this.value)">
+     <option value="all">
+        All
+    </option>
+    <option value="clothing">
+        clothing
+    </option>
+    <option value="electronics">
+        electronics
+    </option>
+</select>
+    </div>
+    <div id="product-container">
+       
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

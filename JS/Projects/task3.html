@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .hide{
+            display: none;
+        }
+    </style>
+  </head>
+  <body id="body">
+    <!-- <p id="para"></p>-->
+    <!-- <div id="content">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_xfwJUoDwTxtZPhFLwsLVagXfkuM3Ahz4Eg&s" alt="" style="height: 200px;">
+    </div>
+    <button id="btn">Click Me</button> -->
+
+
+    <!-- <ul class="list-items">
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+        <li class="item">Item 4</li>
+        <li class="item">Item 5</li>
+        <li class="item">Item 6</li>
+        <li class="item">Item 7</li>
+    </ul> -->
+
+        <p>hello</p>
+        <p>hello</p>
+        <p>hello</p>
+        <p>hello</p>
+        <p>hello</p>
+    <script>
+      // empty paragraph to be filled with "Hello World"
+      // const para = document.getElementById("para");
+      // para.textContent = "Hello World";
+
+      // button that changes its text to "Button Clicked" when clicked
+      // const btn = document.getElementById("btn");
+      // btn.addEventListener("click", function() {
+      //     btn.textContent = "Button Clicked";
+      // });
+
+      // button that changes the background color of the page to lightblue when clicked
+    //   const body = document.getElementById("body");
+    //   const btn = document.getElementById("btn");
+    //   btn.addEventListener("click", function () {
+    //     body.style.backgroundColor = "lightblue";
+    //   });
+
+
+    // // button that toggles the visibility of an image when clicked
+    //     const toggle = document.getElementById("btn");
+    //     const content = document.getElementById("content");
+    //     toggle.addEventListener("click", function(e) {
+    //         content.classList.toggle("hide")
+    //     });
+
+    
+
+    //Listing Items by Class Name (document.getElementsByClassName(), for...of loop,textContent)
+
+    // Get all elements with class name "item" and log their text content
+        // const item=document.getElementsByClassName("item");
+        // for(let x of item){
+        //     console.log(x.textContent);
+        // }
+
+        // Get all elements with class name "item" and change their text content to "Updated Item"
+        const para=document.querySelectorAll("p");
+        para.forEach(function(p){
+            p.textContent="Welcome";
+        });
+    </script>
+  </body>
+</html>
