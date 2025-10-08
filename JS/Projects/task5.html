@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    h1{
+        text-align: center;
+        color: blue;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 100px;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-top: 50px;
+    }
+    button{
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: coral;
+        border: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s, transform 0.2s;
+    }
+    button:hover {
+        background-color: #480ddf;
+        transform: translateY(-2px);
+    }
+    img{
+        border: 2px solid #ccc;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+    }
+  </style>
+  <body>
+    <h1>Image Changer</h1>
+    <div class="container">
+      <button id="Previous"><</button>
+        <div class="img">
+             <img src="" alt="" id="img" width="500px" height="300px" />
+        </div>
+      <button id="Next">></button>
+    </div>
+    <script>
+        const img = document.getElementById("img");
+        const previousBtn = document.getElementById("Previous");
+        const nextBtn = document.getElementById("Next");
+
+        const images = [
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjmaCFNB7Xm0pKegK-8SDfZV1rxVrW1E0geg&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu4-n38DUyT4kF8_Ga46xx5qGh4VH4_8goQQ&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu4-n38DUyT4kF8_Ga46xx5qGh4VH4_8goQQ&s",
+            "https://t4.ftcdn.net/jpg/06/45/24/99/360_F_645249959_uhr8W9H1XFOPMGECjgsAttfIC6r0MFxQ.jpg",
+            "https://t4.ftcdn.net/jpg/06/45/24/99/360_F_645249959_uhr8W9H1XFOPMGECjgsAttfIC6r0MFxQ.jpg",
+            "https://t4.ftcdn.net/jpg/06/45/24/99/360_F_645249959_uhr8W9H1XFOPMGECjgsAttfIC6r0MFxQ.jpg",
+            "https://t4.ftcdn.net/jpg/06/45/24/99/360_F_645249959_uhr8W9H1XFOPMGECjgsAttfIC6r0MFxQ.jpg",
+            "https://live.staticflickr.com/65535/51980751292_38b3d98b76_b.jpg",
+            "https://live.staticflickr.com/65535/51980751292_38b3d98b76_b.jpg",
+            "https://live.staticflickr.com/65535/51980751292_38b3d98b76_b.jpg"
+        ];
+
+        let currentIndex = 0;
+        img.src = images[currentIndex];
+        previousBtn.addEventListener("click", () => {
+            currentIndex--;
+            if (currentIndex < 0) {
+                currentIndex = images.length - 1;
+            }
+            img.src = images[currentIndex];
+        });
+        nextBtn.addEventListener("click", () => {
+            currentIndex++;
+            if (currentIndex >= images.length) {
+                currentIndex = 0;
+            }
+            img.src = images[currentIndex];
+        });
+    </script>
+  </body>
+</html>

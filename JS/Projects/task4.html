@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .color-changer{
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            margin: auto;
+            border: 2px solid black;
+            background-color: white;
+            box-shadow: blueviolet 2px 2px 5px 5px;
+            padding: 30px;
+            border-radius: 50px;
+        }
+        .change-color{
+            margin: 5px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px; 
+            font-size: 18px;
+        }
+        .pink{
+            background-color: pink;
+        }
+        .lightblue{
+            background-color: lightblue;
+        }
+        .lightgreen{
+            background-color: lightgreen;
+        }
+        .lightyellow{
+            background-color: lightyellow;
+        }
+        .lightgray{
+            background-color: lightgray;
+        }
+        .white{
+            background-color: white;
+        }
+        .black{
+            background-color: black;
+            color: white;
+        }
+        .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body id="body">
+
+
+    <div class="color-changer">
+        <h1>Color Changer</h1>
+        <p>Click a button change a background color</p>
+        <button class="change-color pink"></button>
+        <button class="change-color lightblue"></button>
+        <button class="change-color lightgreen"></button>
+        <button class="change-color lightyellow"></button>
+        <button class="change-color lightgray"></button>
+        <button class="change-color white"></button>
+        <button class="change-color black"></button>
+        <button class="change-color red"></button>
+        <button class="change-color blue"></button>
+    </div>
+    <script>
+
+        const body=document.getElementById("body");
+        const buttons=document.querySelectorAll(".change-color");
+
+        buttons.forEach(function(e){
+            e.addEventListener("click",function(){
+                const color=e.classList[1];
+                body.style.backgroundColor=color;
+            });
+        });
+    </script>
+</body>
+</html>
