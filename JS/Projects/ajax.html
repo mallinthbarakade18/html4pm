@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #decfcf;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+        h1 {
+            font-size: 48px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        <h1 id="timer">Welcome</h1>
+    </div>
+
+    <script>
+        setTimeout(() => {
+           const timerElement = document.getElementById("timer");
+           timerElement.textContent = "Welcome";
+            let count = 10;
+            const timer = setInterval(() => {
+                if (count > 0) {
+                    timerElement.textContent = count;
+                    count--;
+                } else {
+                    clearInterval(timer);
+                    timerElement.textContent = "Welcome to Nit";
+                }
+            }, 1000);
+        }, 1000);
+
+    </script>
+
+</body>
+</html>
