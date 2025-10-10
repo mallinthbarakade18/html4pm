@@ -1,0 +1,119 @@
+<!-- Date 09/10/2025 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        height: 100vh;
+      }
+      textarea {
+        width: 300px;
+        height: 50px;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid black;
+        outline: none;
+      }
+
+      #output{
+        display: flex;
+        flex-wrap: wrap;
+        /* width: 300px; */
+        /* height: auto;     */
+        /* overflow: auto; */
+        background-color: aqua;
+        font-size: 24px;
+        border: 2px solid black;
+        border-radius: 15px;
+        padding:5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Q1: Write a program to detect keydown event and display the pressed key on the browser. -->
+    <!-- <h1 id="keydownPress"></h1>
+
+    <script>
+        const key = document.getElementById("keydownPress");
+
+        this.addEventListener("keydown", (e)=>{
+            key.textContent = `You Pressed : ${e.key}`;
+        })
+    </script> -->
+
+    <!-- Q2 -->
+<!-- 
+    <textarea name="" id="textarea"></textarea>
+    <p id="ErrorMessage"></p>
+    <span id="count"></span>
+
+    <script>
+      const textarea = document.getElementById("textarea");
+      const ErrorMessage = document.getElementById("ErrorMessage");
+      const count = document.getElementById("count");
+
+      let WordCount = 0;
+
+      textarea.addEventListener("input", (e) => {
+        WordCount++;
+        console.log(WordCount);
+        count.textContent = `Word Count: ${WordCount}`;
+        if (WordCount == 100) {
+          textarea.disabled = true;
+          ErrorMessage.textContent = "You reached the limit";
+          ErrorMessage.style.color = "red";
+        }
+      }); 
+    </script> -->
+
+
+    <!-- Q3 -->
+<!-- 
+    <textarea name="" id="toUpperConvert"></textarea>
+
+
+    <script>
+
+        const inputValue = document.getElementById("toUpperConvert");
+
+        inputValue.addEventListener("input", (e)=>{
+            let toUpperConvert = e.target.value.trim().toUpperCase();
+            inputValue.value=toUpperConvert;
+        })
+    </script> -->
+
+    <!-- Q4 -->
+    <h3>Input Data</h3>
+    <textarea name="" id="textarea"></textarea>
+
+    <h3>Output Data</h3>
+    <pre id="output"></pretask>
+
+
+    <script>    
+
+        const textarea = document.getElementById('textarea');
+        const output = document.getElementById('output')
+
+        textarea.addEventListener("input",(e)=>{
+            let display = e.target.value.trim()
+            output.textContent=display;
+        })
+    </script>
+  </body>
+</html>

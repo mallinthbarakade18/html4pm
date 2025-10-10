@@ -55,6 +55,7 @@
         let minutes = 5;
         let timer;
         function updateTimer() {
+         
             seconds--;
             if (seconds === -1) {
             minutes--;
@@ -63,11 +64,15 @@
             timerElement.textContent = `${String(minutes).padStart(2, "0")}:${String(
             seconds
             ).padStart(2, "0")}`;
+
+             if(seconds === 0 && minutes === 0){
+              stopBtn.click();
+          }
         }
-    
+       
         startBtn.addEventListener("click", () => {
             if (!timer) {
-            timer = setInterval(updateTimer, 1000);
+            timer = setInterval(updateTimer, 100);
             }
         });
     

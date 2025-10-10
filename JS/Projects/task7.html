@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        height: 100vh;
+      }
+      progress {
+        width: 500px;
+        height: 100px;
+        padding: 5px;
+      }
+      h1 {
+        font-size: 40px;
+      }
+      progress::-webkit-progress-bar {
+        background-color: green;
+        border-radius: 15px;
+      }
+      .hide {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="demo">Loading...</h1>
+        <progress id="progress" value="0" max="100"></progress>
+
+    <script>
+      const progress1 = document.getElementById("progress1");
+      let value = 0;
+
+      const progressBar = setInterval(() => {
+        if (value === 100) {
+          demo.textContent = "Welcome 🎉";
+          progress.classList = "hide";
+        } else {
+          value++;
+          progress.value = value;
+          demo.textContent = `Loading...${value}%`;
+        }
+      }, 100);
+    </script>
+  </body>
+</html>
